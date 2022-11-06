@@ -240,3 +240,6 @@ DEBUG=1
 ```
 
 Will enable access to these variables within any Python program -e.g. via a call to `os.environ['SPARK_HOME']`. Note, that if any security credentials are placed here, then this file **must** be removed from source control - i.e. add `.env` to the `.gitignore` file to prevent potential security risks.
+
+# Summary
+The workflow described above, together with the accompanying Python project, represents a stable foundation for writing robust ETL jobs, regardless of their complexity and regardless of how the jobs are being executed - e.g. via use of cron or more sophisticated workflow automation tools, such as Airflow. I am always interested in collating and integrating more ‘best practices’ - if you have any, please submit them here
